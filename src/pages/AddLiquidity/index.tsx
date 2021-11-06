@@ -242,7 +242,7 @@ export default function AddLiquidity({
         currencies={currencies}
         parsedAmounts={parsedAmounts}
         noLiquidity={noLiquidity}
-        onAdd={onAdd}
+        onAdd={() => onAdd()}
         poolTokenPercentage={poolTokenPercentage}
       />
     )
@@ -426,7 +426,7 @@ export default function AddLiquidity({
                         setShowConfirm(true)
                       }
                     }}
-                    disabled
+                    disabled={!isValid || approvalA !== ApprovalState.APPROVED || approvalB !== ApprovalState.APPROVED}
                     variant={
                       !isValid && !!parsedAmounts[Field.CURRENCY_A] && !!parsedAmounts[Field.CURRENCY_B]
                         ? 'danger'
@@ -434,7 +434,7 @@ export default function AddLiquidity({
                     }
                     width="100%"
                   >
-                    {error ?? "You can't add liquidity on V1"}
+                    {error ?? "Supply"}
                   </Button>
                 </AutoColumn>
               )}

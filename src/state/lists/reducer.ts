@@ -51,8 +51,9 @@ export default createReducer(initialState, (builder) =>
   builder
     .addCase(fetchTokenList.pending, (state, { payload: { requestId, url } }) => {
       state.byUrl[url] = {
-        current: null,
-        pendingUpdate: null,
+        // this state will be overwritten by the spread object below, technically they are useless 
+        // current: null,
+        // pendingUpdate: null,
         ...state.byUrl[url],
         loadingRequestId: requestId,
         error: null,

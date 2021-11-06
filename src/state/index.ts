@@ -13,16 +13,9 @@ import multicall from './multicall/reducer'
 import toasts from './toasts'
 import { getThemeCache } from '../utils/theme'
 
-type MergedState = {
-  user: {
-    [key: string]: any
-  }
-  transactions: {
-    [key: string]: any
-  }
-}
+type MergeState = Record<'user' | 'transactions', any>
 const PERSISTED_KEYS: string[] = ['user', 'transactions']
-const loadedState = load({ states: PERSISTED_KEYS }) as MergedState
+const loadedState = load({ states: PERSISTED_KEYS }) as MergeState
 if (loadedState.user) {
   loadedState.user.userDarkMode = getThemeCache()
 }
@@ -39,7 +32,7 @@ const store = configureStore({
     lists,
     toasts
   },
-  middleware: [...getDefaultMiddleware({ thunk: false }), save({ states: PERSISTED_KEYS })],
+  middleware: getDefaultMiddleware({ thunk: false }).concat(save({ states: PERSISTED_KEYS })),
   preloadedState: loadedState,
 })
 

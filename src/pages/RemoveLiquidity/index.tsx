@@ -383,7 +383,7 @@ export default function RemoveLiquidity({
             </RowBetween>
           </>
         )}
-        <Button disabled={!(approval === ApprovalState.APPROVED || signatureData !== null)} onClick={onRemove}>
+        <Button disabled={!(approval === ApprovalState.APPROVED || signatureData !== null)} onClick={() => onRemove()}>
           {TranslateString(1136, 'Confirm')}
         </Button>
       </>
@@ -458,8 +458,8 @@ export default function RemoveLiquidity({
               <ConfirmationModalContent
                 title={TranslateString(1156, 'You will receive')}
                 onDismiss={handleDismissConfirmation}
-                topContent={modalHeader}
-                bottomContent={modalBottom}
+                topContent={() => modalHeader()}
+                bottomContent={() => modalBottom()}
               />
             )}
             pendingText={pendingText}
@@ -640,7 +640,7 @@ export default function RemoveLiquidity({
                 ) : (
                   <RowBetween>
                     <Button
-                      onClick={onAttemptToApprove}
+                      onClick={() => onAttemptToApprove()}
                       variant={approval === ApprovalState.APPROVED || signatureData !== null ? 'success' : 'primary'}
                       disabled={approval !== ApprovalState.NOT_APPROVED || signatureData !== null}
                       mr="8px"
