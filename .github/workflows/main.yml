@@ -1,5 +1,5 @@
 on: push
-name: 🚀 Deploy website on pus
+name: 🚀 Deploy website on push
 jobs:
   web-deploy:
     name: 🎉 Deploy
@@ -12,5 +12,5 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@4.1.0
       with:
         server: garagedefi.com
-        username: garagedefi@docs.garagedefi.com
+        username: garagedefi@exchange.garagedefi.com
         password: ${{ secrets.ftp_password }}
