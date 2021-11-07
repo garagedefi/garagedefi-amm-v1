@@ -2105,10 +2105,10 @@
     "@ethersproject/properties" "^5.5.0"
     "@ethersproject/strings" "^5.5.0"
 
-"@flash-swap/sdk@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@flash-swap/sdk/-/sdk-1.0.0.tgz#85c04c085b941509202a9b033f8a3eb933a89d7e"
-  integrity sha512-WvPYn2dltgPVwRGxMY5OFcDu3H3ngQG0oVtCtIinfulAbT2/Dyb8sSBP9Gr7DGCIxMDmVnGQGirUIELml6ESUg==
+"@flash-swap/sdk@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@flash-swap/sdk/-/sdk-1.0.1.tgz#8eece93f80c4703f549aeea3097304d051443a85"
+  integrity sha512-HLD8tThkyYHGDdebFYizHGsxYVLep8iM972wvSiskM4dLxNmSkNjkfhkmEJxCOcnijw/CgLV1HHuXwkQN/l4iA==
   dependencies:
     "@pancakeswap-libs/pancake-swap-core" "^0.1.0"
     big.js "^5.2.2"
@@ -2216,9 +2216,9 @@
     tslib "~2.1.0"
 
 "@graphql-tools/import@^6.2.4", "@graphql-tools/import@^6.2.6":
-  version "6.5.8"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/import/-/import-6.5.8.tgz#f6fb890031f1f1e5fd59a5663bc256d1d6f22fd2"
-  integrity sha512-G0/PRf7tY3FZ8QzCeI+XH+CMye1Gd5JHw1G8RvhELxKG0l94xMAih/y7n8FgYp1Q2NgjsY2hFhUpdqgvF/WU3w==
+  version "6.6.0"
+  resolved "https://registry.yarnpkg.com/@graphql-tools/import/-/import-6.6.0.tgz#4779d08ce2b62ddaa95dbe4877e26cdabc1f746f"
+  integrity sha512-qRuvLQQoeF3XEnz1uaH+7Xhs6TA7dUvyJi2VTzD6zLRPoqMXRxtSwoW67jlvskau31mI+7Q8yqG0P3QpdYg1Dw==
   dependencies:
     "@graphql-tools/utils" "8.5.2"
     resolve-from "5.0.0"
