@@ -20,7 +20,7 @@ export const CAKE = new Token(
 // export const BTCB = new Token(ChainId.MAINNET, '0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c', 18, 'BTCB', 'Binance BTC')
 // export const USDT = new Token(ChainId.MAINNET, '0x55d398326f99059fF775485246999027B3197955', 18, 'USDT', 'Tether USD')
 
-export const WBNB = new Token(ChainId.TESTNET, '0xae13d989daC2f0dEbFf460aC112a837C89BAa7cd', 18, 'WBNB', 'Wrapped BNB')
+export const WBNB = new Token(ChainId.TESTNET, '0xDd7FBd7e655DE4B8eccb2B3254F6B69B569F0A9a', 18, 'WCRO', 'Wrapped CRO')
 export const BUSD = new Token(ChainId.TESTNET, '0xaEe5841e2fbA2849eb562B4e81A9C33E565BbD54', 18, 'USDT', 'USDT')
 export const DEGG = new Token(ChainId.TESTNET, '0x4A2883F4e92037a298Dd8cBFc2bcb15B45174587', 18, 'DEGG', 'DEGG Token')
 
