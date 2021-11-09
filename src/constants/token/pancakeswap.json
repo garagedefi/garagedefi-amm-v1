@@ -11,10 +11,10 @@
   "keywords": ["pancake", "default"],
   "tokens": [
     {
-      "name": "FLASH Token",
-      "symbol": "FLASH",
-      "address": "0xb06c05c36efea317cd6fffebf04671560def1867",
-      "chainId": 97,
+      "name": "DEGG Token",
+      "symbol": "DEGG",
+      "address": "0x4A2883F4e92037a298Dd8cBFc2bcb15B45174587",
+      "chainId": 338,
       "decimals": 18,
       "logoURI": "https://exchange.pancakeswap.finance/images/coins/0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c.png"
     },
@@ -22,7 +22,7 @@
       "name": "WBNB Token",
       "symbol": "WBNB",
       "address": "0xae13d989daC2f0dEbFf460aC112a837C89BAa7cd",
-      "chainId": 97,
+      "chainId": 338,
       "decimals": 18,
       "logoURI": "https://exchange.pancakeswap.finance/images/coins/0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c.png"
     },
@@ -35,10 +35,10 @@
       "logoURI": "https://exchange.pancakeswap.finance/images/coins/0xe02df9e3e622debdd69fb838bb799e3f168902c5.png"
     },
     {
-      "name": "BUSD Token",
-      "symbol": "BUSD",
-      "address": "0x78867bbeef44f2326bf8ddd1941a4439382ef2a7",
-      "chainId": 97,
+      "name": "USDT Token",
+      "symbol": "USDT",
+      "address": "0xaEe5841e2fbA2849eb562B4e81A9C33E565BbD54",
+      "chainId": 338,
       "decimals": 18,
       "logoURI": "https://exchange.pancakeswap.finance/images/coins/0xe9e7cea3dedca5984780bafc599bd69add087d56.png"
     },

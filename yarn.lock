@@ -2105,10 +2105,10 @@
     "@ethersproject/properties" "^5.5.0"
     "@ethersproject/strings" "^5.5.0"
 
-"@flash-swap/sdk@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@flash-swap/sdk/-/sdk-1.0.1.tgz#8eece93f80c4703f549aeea3097304d051443a85"
-  integrity sha512-HLD8tThkyYHGDdebFYizHGsxYVLep8iM972wvSiskM4dLxNmSkNjkfhkmEJxCOcnijw/CgLV1HHuXwkQN/l4iA==
+"@flash-swap/sdk@^1.0.1-test":
+  version "1.0.1-test"
+  resolved "https://registry.yarnpkg.com/@flash-swap/sdk/-/sdk-1.0.1-test.tgz#47f4165c047790586bc9eb561f350c20ae75c226"
+  integrity sha512-4zAjdHXqOoYEvB6l5j2bPc3WcUjWCuKsabenFoGJ4kfnLSrVbRvlBQA6rdD3ArgoIdZMO6iNzojjWfN95nf29g==
   dependencies:
     "@pancakeswap-libs/pancake-swap-core" "^0.1.0"
     big.js "^5.2.2"

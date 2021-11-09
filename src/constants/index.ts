@@ -1,6 +1,6 @@
 import { ChainId, JSBI, Percent, Token, WETH } from '@flash-swap/sdk'
 
-export const ROUTER_ADDRESS = '0x723F54A55BFB32e9B5De3070739e397CF045281b'
+export const ROUTER_ADDRESS = '0xaeF7654808E5E9Aee38fA85C390Da0bB0F2dfbB4'
 
 // a list of tokens by chain
 type ChainTokenList = {
@@ -9,10 +9,10 @@ type ChainTokenList = {
 
 export const CAKE = new Token(
   ChainId.TESTNET,
-  '0xb06c05c36efea317cd6fffebf04671560def1867',
+  '0x4A2883F4e92037a298Dd8cBFc2bcb15B45174587',
   18,
-  'FLASH',
-  'FLASH Token'
+  'DEGG',
+  'DEGG Token'
 )
 // export const WBNB = new Token(ChainId.MAINNET, '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c', 18, 'WBNB', 'Wrapped BNB')
 // export const DAI = new Token(ChainId.MAINNET, '0x1AF3F329e8BE154074D8769D1FFa4eE058B1DBc3', 18, 'DAI', 'Dai Stablecoin')
@@ -21,8 +21,8 @@ export const CAKE = new Token(
 // export const USDT = new Token(ChainId.MAINNET, '0x55d398326f99059fF775485246999027B3197955', 18, 'USDT', 'Tether USD')
 
 export const WBNB = new Token(ChainId.TESTNET, '0xae13d989daC2f0dEbFf460aC112a837C89BAa7cd', 18, 'WBNB', 'Wrapped BNB')
-export const BUSD = new Token(ChainId.TESTNET, '0x78867bbeef44f2326bf8ddd1941a4439382ef2a7', 18, 'BUSD', 'Binance USD')
-export const FLASH = new Token(ChainId.TESTNET, '0xb06c05c36efea317cd6fffebf04671560def1867', 18, 'FLASH', 'FLASH Token')
+export const BUSD = new Token(ChainId.TESTNET, '0xaEe5841e2fbA2849eb562B4e81A9C33E565BbD54', 18, 'USDT', 'USDT')
+export const DEGG = new Token(ChainId.TESTNET, '0x4A2883F4e92037a298Dd8cBFc2bcb15B45174587', 18, 'DEGG', 'DEGG Token')
 
 // export const UST = new Token(
 //   ChainId.MAINNET,
