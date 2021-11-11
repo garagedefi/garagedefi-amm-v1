@@ -2105,12 +2105,21 @@
     "@ethersproject/properties" "^5.5.0"
     "@ethersproject/strings" "^5.5.0"
 
-"@flash-swap/sdk@^1.0.3-test":
-  version "1.0.3-test"
-  resolved "https://registry.yarnpkg.com/@flash-swap/sdk/-/sdk-1.0.3-test.tgz#337cc9e9dedd66d47823db18ee924a63210398a8"
-  integrity sha512-AQkkXI5Av5eBx+E+ow4DCnhbioLZiI2Xyj3I7B4ISkHieJpmpJDZc4g+3sHn9EeX5b5T0lafHQE+tYiD9L/w3A==
+"@flash-swap/flash-swap-core@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@flash-swap/flash-swap-core/-/flash-swap-core-0.1.0.tgz#0f7eb8379833a92179c1b3a910b685de0559176b"
+  integrity sha512-aqK1rykCa378yjAaBiudxVq09MEru21Yc8HUEU4uF430qHGQoNh3pIX9yZFLvaqG+jgSd0HrFlKb02uH1C6V6g==
   dependencies:
-    "@pancakeswap-libs/pancake-swap-core" "^0.1.0"
+    truffle "^5.1.41"
+    truffle-flattener "^1.4.4"
+    truffle-hdwallet-provider "^1.0.17"
+
+"@flash-swap/sdk@^1.0.5-test":
+  version "1.0.5-test"
+  resolved "https://registry.yarnpkg.com/@flash-swap/sdk/-/sdk-1.0.5-test.tgz#602927a6cf5dd1fdf845a8cf3fb934ed72aacb34"
+  integrity sha512-B0O+uKZchNJMjRGz53mxsN4uAPGFlRwvPxjZvpA+DYwEqgyJfWTdbpGH6j2DxMYW45YygplC0lE9Jvt/KENq3A==
+  dependencies:
+    "@flash-swap/flash-swap-core" "^0.1.0"
     big.js "^5.2.2"
     decimal.js-light "^2.5.0"
     jsbi "^3.1.1"
@@ -2865,15 +2874,6 @@
     eslint-plugin-jsx-a11y "^6.4.1"
     eslint-plugin-react "^7.21.5"
     eslint-plugin-react-hooks "^4.0.0"
-
-"@pancakeswap-libs/pancake-swap-core@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@pancakeswap-libs/pancake-swap-core/-/pancake-swap-core-0.1.0.tgz#6957f1fa02170531a2ffbf95f2c0e145e9d21bc2"
-  integrity sha512-2jYiD1Ec3xAbP4JTa/Ozylx0xI4VwC7diCm5ak4AtGrIRhfRLSanaZSQdVpLigUnIFszma/4nVWtt3cup4Poxw==
-  dependencies:
-    truffle "^5.1.41"
-    truffle-flattener "^1.4.4"
-    truffle-hdwallet-provider "^1.0.17"
 
 "@pancakeswap-libs/uikit@^0.27.1":
   version "0.27.1"
