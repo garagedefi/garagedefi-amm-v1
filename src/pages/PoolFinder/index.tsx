@@ -1,6 +1,6 @@
 import { Currency, ETHER, JSBI, TokenAmount } from '@flash-swap/sdk'
 import React, { useCallback, useEffect, useState } from 'react'
-import { Button, ChevronDownIcon, AddIcon, CardBody, Text } from '@pancakeswap-libs/uikit'
+import { Button, ChevronDownIcon, AddIcon, CardBody, Text } from '@flash-swap/uikit'
 import CardNav from 'components/CardNav'
 import { LightCard } from 'components/Card'
 import { AutoColumn, ColumnCenter } from 'components/Column'

@@ -2114,10 +2114,10 @@
     truffle-flattener "^1.4.4"
     truffle-hdwallet-provider "^1.0.17"
 
-"@flash-swap/sdk@^1.0.5-test":
-  version "1.0.5-test"
-  resolved "https://registry.yarnpkg.com/@flash-swap/sdk/-/sdk-1.0.5-test.tgz#602927a6cf5dd1fdf845a8cf3fb934ed72aacb34"
-  integrity sha512-B0O+uKZchNJMjRGz53mxsN4uAPGFlRwvPxjZvpA+DYwEqgyJfWTdbpGH6j2DxMYW45YygplC0lE9Jvt/KENq3A==
+"@flash-swap/sdk@^1.0.6-test":
+  version "1.0.6-test"
+  resolved "https://registry.yarnpkg.com/@flash-swap/sdk/-/sdk-1.0.6-test.tgz#e3ed13c00092a9f2ad32afb849d547c5d3021481"
+  integrity sha512-rSqYhmmk8WKDSucCxjGS26B7NJlK05vP96XdosDHFI48bBeLa419jnqo3roi4/znP1nNY8ry714iMKK2RauRbA==
   dependencies:
     "@flash-swap/flash-swap-core" "^0.1.0"
     big.js "^5.2.2"
@@ -2126,6 +2126,20 @@
     tiny-invariant "^1.1.0"
     tiny-warning "^1.0.3"
     toformat "^2.0.0"
+
+"@flash-swap/uikit@^1.0.22":
+  version "1.0.22"
+  resolved "https://registry.yarnpkg.com/@flash-swap/uikit/-/uikit-1.0.22.tgz#f33af9033f6106e6a9e5080cdaa7561e402969c7"
+  integrity sha512-593j/LaCdLYnY8AyTobQiSOEAFl7NWgIcnBNLvJGMfM/o1g8n3EBjYQ21IufE5oHUZQ4AM0J99GSCp3c+yTdAA==
+  dependencies:
+    "@popperjs/core" "^2.10.2"
+    "@types/lodash" "^4.14.162"
+    "@types/react-dom" "^17.0.11"
+    "@types/styled-system" "^5.1.10"
+    lodash "^4.17.20"
+    react-popper "^2.2.5"
+    react-transition-group "^4.4.1"
+    styled-system "^5.1.5"
 
 "@gar/promisify@^1.0.1":
   version "1.1.2"
@@ -2875,19 +2889,6 @@
     eslint-plugin-react "^7.21.5"
     eslint-plugin-react-hooks "^4.0.0"
 
-"@pancakeswap-libs/uikit@^0.27.1":
-  version "0.27.1"
-  resolved "https://registry.yarnpkg.com/@pancakeswap-libs/uikit/-/uikit-0.27.1.tgz#56a6868f3d5a93996527d939a507fcf5bf08ab75"
-  integrity sha512-RWzFquD34udINnodokKYek6AJcjjo37U0fAZ48Q/jEoHUg1FB2ES34V/G+zFLqXEHIDWrzSTO3ujJyJDMs1iPw==
-  dependencies:
-    "@popperjs/core" "^2.9.2"
-    "@types/lodash" "^4.14.168"
-    "@types/styled-system" "^5.1.10"
-    lodash "^4.17.20"
-    react-popper "^2.2.5"
-    react-transition-group "^4.4.1"
-    styled-system "^5.1.5"
-
 "@pedrouid/environment@^1.0.1":
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/@pedrouid/environment/-/environment-1.0.1.tgz#858f0f8a057340e0b250398b75ead77d6f4342ec"
@@ -2905,7 +2906,7 @@
     schema-utils "^2.6.5"
     source-map "^0.7.3"
 
-"@popperjs/core@^2.4.4", "@popperjs/core@^2.9.2":
+"@popperjs/core@^2.10.2", "@popperjs/core@^2.4.4":
   version "2.10.2"
   resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.10.2.tgz#0798c03351f0dea1a5a4cabddf26a55a7cbee590"
   integrity sha512-IXf3XA7+XyN7CP9gGh/XB0UxVMlvARGEgGXLubFICsUMGz6Q+DU+i4gGlpOxTjKvXjkJDJC8YdqdKkDj9qZHEQ==
@@ -4238,7 +4239,7 @@
   dependencies:
     "@types/lodash" "*"
 
-"@types/lodash@*", "@types/lodash@^4.14.168":
+"@types/lodash@*", "@types/lodash@^4.14.162":
   version "4.14.176"
   resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.176.tgz#641150fc1cda36fbfa329de603bbb175d7ee20c0"
   integrity sha512-xZmuPTa3rlZoIbtDUyJKZQimJV3bxCmzMIO2c9Pz9afyDro6kr7R79GwcB6mRhuoPmV2p1Vb66WOJH7F886WKQ==
@@ -4342,7 +4343,7 @@
   resolved "https://registry.yarnpkg.com/@types/range-parser/-/range-parser-1.2.4.tgz#cd667bcfdd025213aafb7ca5915a932590acdcdc"
   integrity sha512-EEhsLsD6UsDM1yFhAvy0Cjr6VwmpMWqFBCb9w07wVugF7w9nfajxLuVmngTIpgS6svCnm6Vaw+MZhoDCKnOfsw==
 
-"@types/react-dom@^17.0.0":
+"@types/react-dom@^17.0.0", "@types/react-dom@^17.0.11":
   version "17.0.11"
   resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-17.0.11.tgz#e1eadc3c5e86bdb5f7684e00274ae228e7bcc466"
   integrity sha512-f96K3k+24RaLGVu/Y2Ng3e1EbZ8/cVJvypZWd7cy0ofCBaf2lcM46xNhycMZ2xGwbBjRql7hOlZ+e2WlJ5MH3Q==
