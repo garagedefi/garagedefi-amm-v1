@@ -4,7 +4,7 @@ const config: MenuEntry[] = [
   {
     label: 'Home',
     icon: 'HomeIcon',
-    href: 'https://duckyfinance.com/',
+    href: 'https://duckydefi.com/',
   },
   {
     label: 'Trade',
@@ -28,12 +28,12 @@ const config: MenuEntry[] = [
   {
     label: 'Farms',
     icon: 'FarmIcon',
-    href: 'https://duckyfinance.com/farms',
+    href: 'https://duckydefi.com/farms',
   },
   {
     label: 'Pools',
     icon: 'PoolIcon',
-    href: 'https://duckyfinance.com/pools',
+    href: 'https://duckydefi.com/pools',
   },
   // {
   //   label: 'Prediction (BETA)',
@@ -118,11 +118,11 @@ const config: MenuEntry[] = [
       // },
       {
         label: 'Docs',
-        href: 'https://docs.duckyfinance.com',
+        href: 'https://docs.duckydefi.com',
       },
       {
         label: 'Blog',
-        href: 'https://docs.duckyfinance.com',
+        href: 'https://docs.duckydefi.com',
       },
       // {
       //   label: 'Merch',

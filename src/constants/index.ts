@@ -1,6 +1,6 @@
 import { ChainId, JSBI, Percent, Token, WETH } from '@flash-swap/sdk'
 
-export const ROUTER_ADDRESS = '0xaeF7654808E5E9Aee38fA85C390Da0bB0F2dfbB4'
+export const ROUTER_ADDRESS = '0x28a10fE91d4a8D0637999a903eEf9Ad5b1D9947C'
 
 // a list of tokens by chain
 type ChainTokenList = {
@@ -20,9 +20,20 @@ export const CAKE = new Token(
 // export const BTCB = new Token(ChainId.MAINNET, '0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c', 18, 'BTCB', 'Binance BTC')
 // export const USDT = new Token(ChainId.MAINNET, '0x55d398326f99059fF775485246999027B3197955', 18, 'USDT', 'Tether USD')
 
-export const WBNB = new Token(ChainId.TESTNET, '0xDd7FBd7e655DE4B8eccb2B3254F6B69B569F0A9a', 18, 'WCRO', 'Wrapped CRO')
-export const BUSD = new Token(ChainId.TESTNET, '0xaEe5841e2fbA2849eb562B4e81A9C33E565BbD54', 18, 'USDT', 'USDT')
-export const DEGG = new Token(ChainId.TESTNET, '0x4A2883F4e92037a298Dd8cBFc2bcb15B45174587', 18, 'DEGG', 'DEGG Token')
+// export const WBNB = new Token(ChainId.TESTNET, '0xDd7FBd7e655DE4B8eccb2B3254F6B69B569F0A9a', 18, 'WCRO', 'Wrapped CRO')
+// export const BUSD = new Token(ChainId.TESTNET, '0xaEe5841e2fbA2849eb562B4e81A9C33E565BbD54', 18, 'USDT', 'USDT')
+// export const DEGG = new Token(ChainId.TESTNET, '0x4A2883F4e92037a298Dd8cBFc2bcb15B45174587', 18, 'DEGG', 'DEGG Token')
+
+export const { WBNB, BUSD, USD } = process.env.REACT_APP_CHAIN_ID ? {
+  WBNB: new Token(ChainId.MAINNET, '0x5C7F8A570d578ED84E63fdFA7b1eE72dEae1AE23', 18, 'WCRO', 'Wrapped CRO'),
+  BUSD: new Token(ChainId.MAINNET, '0xc21223249CA28397B4B6541dfFaEcC539BfF0c59', 6, 'USDC', 'USDC'),
+  USD: new Token(ChainId.MAINNET, '0x66e428c3f67a68878562e79A0234c1F83c208770', 6, 'USDT', 'USDT')
+  // DEGG = new Token(ChainId.TESTNET, '0x4A2883F4e92037a298Dd8cBFc2bcb15B45174587', 18, 'DEGG', 'DEGG Token')
+} : {
+  WBNB: new Token(ChainId.TESTNET, '0xDd7FBd7e655DE4B8eccb2B3254F6B69B569F0A9a', 18, 'WCRO', 'Wrapped CRO'),
+  BUSD: new Token(ChainId.TESTNET, '0x25f0965F285F03d6F6B3B21c8EC3367412Fd0ef6', 6, 'USDC', 'USDC'),
+  USD: new Token(ChainId.MAINNET, '0xaEe5841e2fbA2849eb562B4e81A9C33E565BbD54', 6, 'USDT', 'USDT')
+}
 
 // export const UST = new Token(
 //   ChainId.MAINNET,

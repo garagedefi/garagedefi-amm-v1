@@ -2114,10 +2114,10 @@
     truffle-flattener "^1.4.4"
     truffle-hdwallet-provider "^1.0.17"
 
-"@flash-swap/sdk@^1.0.6-test":
-  version "1.0.6-test"
-  resolved "https://registry.yarnpkg.com/@flash-swap/sdk/-/sdk-1.0.6-test.tgz#e3ed13c00092a9f2ad32afb849d547c5d3021481"
-  integrity sha512-rSqYhmmk8WKDSucCxjGS26B7NJlK05vP96XdosDHFI48bBeLa419jnqo3roi4/znP1nNY8ry714iMKK2RauRbA==
+"@flash-swap/sdk@^1.0.7":
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/@flash-swap/sdk/-/sdk-1.0.7.tgz#91f13cfde59f4b3b055091b3bafb98ee43b513b0"
+  integrity sha512-CVNDQ8ic90I7Zdr4yqSNhBeCJL0AYs3EDU5mgGyyqwkGz6yqeyoaC5AB1m6KVP4ohav2fTN+w2ZH/1GobMH/JA==
   dependencies:
     "@flash-swap/flash-swap-core" "^0.1.0"
     big.js "^5.2.2"
