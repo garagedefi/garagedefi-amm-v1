@@ -119,11 +119,7 @@ const config: MenuEntry[] = [
       {
         label: 'Docs',
         href: 'https://docs.duckydefi.com',
-      },
-      {
-        label: 'Blog',
-        href: 'https://docs.duckydefi.com',
-      },
+      }
       // {
       //   label: 'Merch',
       //   href: 'https://pancakeswap.creator-spring.com/',
