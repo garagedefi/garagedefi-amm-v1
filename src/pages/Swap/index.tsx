@@ -1,4 +1,4 @@
-import { CurrencyAmount, JSBI, Token, Trade } from '@flash-swap/sdk'
+import { Currency, CurrencyAmount, JSBI, Token, Trade } from '@flash-swap/sdk'
 import React, { useCallback, useContext, useEffect, useMemo, useState, useRef } from 'react'
 import { ArrowDown } from 'react-feather'
 import { CardBody, ArrowDownIcon, Button, IconButton, Text, useModal, Link, Flex } from '@flash-swap/uikit'
@@ -162,6 +162,10 @@ const Swap = () => {
       setApprovalSubmitted(true)
     }
   }, [approval, approvalSubmitted])
+
+  useEffect(() => {
+    onCurrencySelection(Field.INPUT, Currency.ETHER);
+  }, [onCurrencySelection]);
 
   const maxAmountInput: CurrencyAmount | undefined = maxAmountSpend(currencyBalances[Field.INPUT])
   const atMaxAmountInput = Boolean(maxAmountInput && parsedAmounts[Field.INPUT]?.equalTo(maxAmountInput))
