@@ -32,7 +32,7 @@ export const { WBNB, BUSD, USD } = process.env.REACT_APP_CHAIN_ID ? {
 } : {
   WBNB: new Token(ChainId.TESTNET, '0xDd7FBd7e655DE4B8eccb2B3254F6B69B569F0A9a', 18, 'WCRO', 'Wrapped CRO'),
   BUSD: new Token(ChainId.TESTNET, '0x25f0965F285F03d6F6B3B21c8EC3367412Fd0ef6', 6, 'USDC', 'USDC'),
-  USD: new Token(ChainId.MAINNET, '0xaEe5841e2fbA2849eb562B4e81A9C33E565BbD54', 6, 'USDT', 'USDT')
+  USD: new Token(ChainId.TESTNET, '0xaEe5841e2fbA2849eb562B4e81A9C33E565BbD54', 6, 'USDT', 'USDT')
 }
 
 // export const UST = new Token(
@@ -58,6 +58,7 @@ const WETH_ONLY: ChainTokenList = {
 // used to construct intermediary pairs for trading
 export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
   ...WETH_ONLY,
+  [ChainId.MAINNET]: [...WETH_ONLY[ChainId.MAINNET], BUSD],
   [ChainId.TESTNET]: [...WETH_ONLY[ChainId.TESTNET], BUSD],
 }
 
@@ -72,12 +73,14 @@ export const CUSTOM_BASES: { [chainId in ChainId]?: { [tokenAddress: string]: To
 // used for display in the default list when adding liquidity
 export const SUGGESTED_BASES: ChainTokenList = {
   ...WETH_ONLY,
+  [ChainId.MAINNET]: [...WETH_ONLY[ChainId.MAINNET], BUSD],
   [ChainId.TESTNET]: [...WETH_ONLY[ChainId.TESTNET], BUSD],
 }
 
 // used to construct the list of all pairs we consider by default in the frontend
 export const BASES_TO_TRACK_LIQUIDITY_FOR: ChainTokenList = {
   ...WETH_ONLY,
+  [ChainId.MAINNET]: [...WETH_ONLY[ChainId.MAINNET], BUSD],
   [ChainId.TESTNET]: [...WETH_ONLY[ChainId.TESTNET], BUSD],
 }
 
