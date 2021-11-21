@@ -61,7 +61,7 @@ export default function Pool() {
       <AppBody>
         <PageHeader
           title={TranslateString(262, 'Liquidity')}
-          description={TranslateString(1168, 'Add liquidity to receive LP tokens')}
+          description={TranslateString(1168, 'Add liquidity to receive LP tokens and earn swap fees')}
         >
           <Button id="join-pool-button" as={Link} to="/add/CRO" mb="16px">
             {TranslateString(168, 'Add Liquidity')}
