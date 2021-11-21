@@ -43,7 +43,7 @@
       "logoURI": "https://exchange.duckydefi.com/images/coins/0xc21223249CA28397B4B6541dfFaEcC539BfF0c59.png"
     },
     {
-      "name": "WETH Token",
+      "name": "ETH Token",
       "symbol": "ETH",
       "address": "0xe44Fd7fCb2b1581822D0c862B68222998a0c299a",
       "chainId": 25,
