@@ -101,31 +101,10 @@ const config: MenuEntry[] = [
   //   href: 'https://pancakeswap.finance/ifo',
   // },
   {
-    label: 'More',
-    icon: 'MoreIcon',
-    items: [
-      // {
-      //   label: 'Contact',
-      //   href: 'https://docs.pancakeswap.finance/contact-us',
-      // },
-      // {
-      //   label: 'Voting',
-      //   href: 'https://voting.pancakeswap.finance',
-      // },
-      // {
-      //   label: 'Github',
-      //   href: 'https://github.com/pancakeswap',
-      // },
-      {
-        label: 'Docs',
-        href: 'https://docs.duckydefi.com',
-      }
-      // {
-      //   label: 'Merch',
-      //   href: 'https://pancakeswap.creator-spring.com/',
-      // },
-    ],
-  },
+    label: 'Docs',
+    icon: 'DocIcon',
+    href: 'https://docs.duckydefi.com',
+  }
 ]
 
 export default config
