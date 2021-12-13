@@ -1,6 +1,10 @@
 import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
+  * {
+    font-family: 'Open Sans', 'Kanit', sans-serif;
+  }
+
   body {
     background-color: ${({ theme }) => theme.colors.background};
 
