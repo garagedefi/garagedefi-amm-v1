@@ -324,7 +324,7 @@ const Swap = () => {
                     : TranslateString(76, 'From')
                 }
                 value={formattedAmounts[Field.INPUT]}
-                showMaxButton={!atMaxAmountInput}
+                showMaxButton
                 currency={currencies[Field.INPUT]}
                 onUserInput={handleTypeInput}
                 onMax={handleMaxInput}

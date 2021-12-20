@@ -1,9 +1,13 @@
+/* eslint-disable @typescript-eslint/no-empty-function */
 import React, { useState, useCallback } from 'react'
-import { Currency, Pair } from '@flash-swap/sdk'
-import { Button, ChevronDownIcon, Text } from '@flash-swap/uikit'
+import { Currency, CurrencyAmount, Pair } from '@flash-swap/sdk'
+import { Button, ChevronDownIcon, Flex, Text } from '@flash-swap/uikit'
 import styled from 'styled-components'
 import { darken } from 'polished'
 import useI18n from 'hooks/useI18n'
+import { Field } from 'state/swap/actions'
+import { useDerivedSwapInfo } from 'state/swap/hooks'
+import { percentAmountSpend, PercentType } from 'utils/percentAmountSpend'
 import { useCurrencyBalance } from '../../state/wallet/hooks'
 import CurrencySearchModal from '../SearchModal/CurrencySearchModal'
 import CurrencyLogo from '../CurrencyLogo'
@@ -104,9 +108,19 @@ export default function CurrencyInputPanel({
   const selectedCurrencyBalance = useCurrencyBalance(account ?? undefined, currency ?? undefined)
   const TranslateString = useI18n()
   const translatedLabel = label || TranslateString(132, 'Input')
+  const { currencyBalances } = useDerivedSwapInfo()
   const handleDismissSearch = useCallback(() => {
     setModalOpen(false)
   }, [setModalOpen])
+
+  const percentCalculate = (_currencyBalances: any, percent: PercentType) => {
+    if (_currencyBalances && _currencyBalances.INPUT) {
+      const percentAmount = percentAmountSpend(_currencyBalances.INPUT, percent)
+      if (percentAmount) {
+        onUserInput(percentAmount);
+      }
+    }
+  }
   return (
     <InputPanel id={id}>
       <Container hideInput={hideInput}>
@@ -134,11 +148,6 @@ export default function CurrencyInputPanel({
                   onUserInput(val)
                 }}
               />
-              {account && currency && showMaxButton && label !== 'To' && (
-                <Button onClick={onMax} scale="sm" variant="text">
-                  MAX
-                </Button>
-              )}
             </>
           )}
           <CurrencySelect
@@ -174,6 +183,30 @@ export default function CurrencyInputPanel({
             </Aligner>
           </CurrencySelect>
         </InputRow>
+        {id === 'swap-currency-input' ? (
+          <Flex justifyContent="space-around" paddingBottom="12px">
+            <Button
+              variant="tertiary"
+              scale="sm"
+              onClick={() => {
+                percentCalculate(currencyBalances, '25')
+              }}
+            >
+              25%
+            </Button>
+            <Button variant="tertiary" scale="sm" onClick={() => percentCalculate(currencyBalances, '50')}>
+              50%
+            </Button>
+            <Button variant="tertiary" scale="sm" onClick={() => percentCalculate(currencyBalances, '75')}>
+              75%
+            </Button>
+            <Button variant="tertiary" scale="sm" onClick={onMax}>
+              {TranslateString(166, 'Max')}
+            </Button>
+          </Flex>
+        ) : (
+          <></>
+        )}
       </Container>
       {!disableCurrencySelect && onCurrencySelect && (
         <CurrencySearchModal

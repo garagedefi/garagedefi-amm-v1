@@ -2114,7 +2114,7 @@
     truffle-flattener "^1.4.4"
     truffle-hdwallet-provider "^1.0.17"
 
-"@flash-swap/sdk@1.0.7":
+"@flash-swap/sdk@^1.0.7":
   version "1.0.7"
   resolved "https://registry.yarnpkg.com/@flash-swap/sdk/-/sdk-1.0.7.tgz#91f13cfde59f4b3b055091b3bafb98ee43b513b0"
   integrity sha512-CVNDQ8ic90I7Zdr4yqSNhBeCJL0AYs3EDU5mgGyyqwkGz6yqeyoaC5AB1m6KVP4ohav2fTN+w2ZH/1GobMH/JA==
@@ -2127,10 +2127,10 @@
     tiny-warning "^1.0.3"
     toformat "^2.0.0"
 
-"@flash-swap/uikit@^1.0.31":
-  version "1.0.31"
-  resolved "https://registry.yarnpkg.com/@flash-swap/uikit/-/uikit-1.0.31.tgz#b5872642261040c0df39f52e7766d5797b8df76a"
-  integrity sha512-EBzOB1PP+iPzy26cHjSKJO75D/4MNs25G8ldSxtgIY9uPow4irrfaPwODQZUCmZOUJyZmDM1uZRZQdZUbP9bjA==
+"@flash-swap/uikit@^1.0.32":
+  version "1.0.32"
+  resolved "https://registry.yarnpkg.com/@flash-swap/uikit/-/uikit-1.0.32.tgz#9dddf891b6e3044789934822803650a2e097fa83"
+  integrity sha512-NVTgje4ILLpr0qwjH8bzbfTy812ogPi2EJa4Aok0y4+JDotZgZVjC+3/ppEW+k9OKZYsL07vtZaGS9SUoR8nvg==
   dependencies:
     "@popperjs/core" "^2.10.2"
     "@types/lodash" "^4.14.162"
