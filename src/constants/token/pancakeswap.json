@@ -81,6 +81,22 @@
       "chainId": 25,
       "decimals": 18,
       "logoURI": "https://exchange.duckydefi.com/images/coins/0x0e98DC462fF438b802FaD0D68fF7F111a0674BB5.png"
+    },
+    {
+      "name": "WCRO Token",
+      "symbol": "WCRO",
+      "address": "0x5C7F8A570d578ED84E63fdFA7b1eE72dEae1AE23",
+      "chainId": 25,
+      "decimals": 18,
+      "logoURI": "https://exchange.duckydefi.com/images/coins/0x5C7F8A570d578ED84E63fdFA7b1eE72dEae1AE23.png"
+    },
+    {
+      "name": "WCRO Token",
+      "symbol": "WCRO",
+      "address": "0xDd7FBd7e655DE4B8eccb2B3254F6B69B569F0A9a",
+      "chainId": 338,
+      "decimals": 18,
+      "logoURI": "https://exchange.duckydefi.com/images/coins/0x5C7F8A570d578ED84E63fdFA7b1eE72dEae1AE23.png"
     }
   ]
 }
