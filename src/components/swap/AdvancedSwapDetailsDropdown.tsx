@@ -13,14 +13,13 @@ const AdvancedDetailsFooter = styled.div<{ show: boolean }>`
   border-bottom-right-radius: 20px;
   color: ${({ theme }) => theme.colors.textSubtle};
   z-index: 1;
-
-  transform: ${({ show }) => (show ? 'translateY(0%)' : 'translateY(-100%)')};
-  transition: transform 300ms ease-in-out;
+  opacity: ${({ show }) => (show ? '1' : '0')};
+  transition: opacity 0.5s;
+  -webkit-transition: opacity 0.5s;
 `
 
 export default function AdvancedSwapDetailsDropdown({ trade, ...rest }: AdvancedSwapDetailsProps) {
   const lastTrade = useLastTruthy(trade)
-
   return (
     <AdvancedDetailsFooter show={Boolean(trade)}>
       <AdvancedSwapDetails {...rest} trade={trade ?? lastTrade ?? undefined} />

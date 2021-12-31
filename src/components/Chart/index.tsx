@@ -25,7 +25,7 @@ function Chart({ tokenA, tokenB }) {
   // const resizeObserver: any = useRef()
   const [showOverlay, setShowOverlay] = useState(false)
   const [isLoading, setLoading] = useState(false)
-  const [index, setIndex] = useState(0)
+  const [index, setIndex] = useState(2)
   const chartSeries: any = useRef();
 
   const handleClick = (newIndex) => setIndex(newIndex)
@@ -109,6 +109,13 @@ function Chart({ tokenA, tokenB }) {
         wickDownColor: '#838ca1',
         wickUpColor: '#838ca1',
       })
+      candle.applyOptions({
+        priceFormat: {
+          type: 'price',
+          precision: 7,
+          minMove: 0.0000001,
+      }
+      });
       chartSeries.current = candle;
       try {
         setShowOverlay(false)
