@@ -38,6 +38,7 @@ import PageHeader from 'components/PageHeader'
 import ConnectWalletButton from 'components/ConnectWalletButton'
 import Chart from 'components/Chart'
 import AppBody from '../AppBody'
+import { useAllTokens } from '../../hooks/Tokens'
 
 const StyledLink = styled(Link)`
   display: inline;
@@ -67,6 +68,9 @@ const StyledSwap = styled.div`
 const Swap = () => {
   const loadedUrlParams = useDefaultsFromURLSearch()
   const TranslateString = useI18n()
+
+  // All Tokens
+  const allTokens = useAllTokens()
 
   // token warning stuff
   const [loadedInputCurrency, loadedOutputCurrency] = [
@@ -187,7 +191,10 @@ const Swap = () => {
 
   useEffect(() => {
     onCurrencySelection(Field.INPUT, Currency.ETHER)
-  }, [onCurrencySelection])
+    if (allTokens["0xFD71FC52D34eD1Cfc8363e5528285B12b6b942c2"]) {
+      onCurrencySelection(Field.OUTPUT, allTokens["0xFD71FC52D34eD1Cfc8363e5528285B12b6b942c2"])
+    }
+  }, [onCurrencySelection, allTokens])
 
   const maxAmountInput: CurrencyAmount | undefined = maxAmountSpend(currencyBalances[Field.INPUT])
   const atMaxAmountInput = Boolean(maxAmountInput && parsedAmounts[Field.INPUT]?.equalTo(maxAmountInput))

@@ -5,6 +5,7 @@ import { WalletConnectConnector } from '@web3-react/walletconnect-connector'
 import { WalletLinkConnector } from '@web3-react/walletlink-connector'
 import { BscConnector } from '@binance-chain/bsc-connector'
 import { ChainId } from '@flash-swap/sdk'
+import { DeFiWeb3Connector } from "deficonnect";
 import { NetworkConnector } from './NetworkConnector'
 
 const NETWORK_URL = process.env.REACT_APP_NETWORK_URL
@@ -31,6 +32,12 @@ export const injected = new InjectedConnector({
 
 export const bscConnector = new BscConnector({ supportedChainIds: [25] })
 
+const defiWalletConnect = new DeFiWeb3Connector({
+  supportedChainIds: [NETWORK_CHAIN_ID],
+  rpc: { [NETWORK_CHAIN_ID]: NETWORK_URL },
+  pollingInterval: 15000,
+})
+
 // mainnet only
 export const walletconnect = new WalletConnectConnector({
   rpc: { [NETWORK_CHAIN_ID]: NETWORK_URL },
@@ -52,4 +59,5 @@ export const connectorsByName: { [connectorName in ConnectorNames]: any } = {
   [ConnectorNames.Injected]: injected,
   [ConnectorNames.WalletConnect]: walletconnect,
   [ConnectorNames.BSC]: bscConnector,
+  [ConnectorNames.CDCDefiWallet]: defiWalletConnect
 }
