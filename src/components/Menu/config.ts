@@ -104,6 +104,11 @@ const config: MenuEntry[] = [
     label: 'Docs',
     icon: 'DocIcon',
     href: 'https://docs.duckydefi.com',
+  },
+  {
+    label: 'Info',
+    icon: 'AnalyticIcon',
+    href: 'https://duckydefi.com/info',
   }
 ]
 
