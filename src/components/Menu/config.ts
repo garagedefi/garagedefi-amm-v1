@@ -111,9 +111,18 @@ const config: MenuEntry[] = [
     href: 'https://duckydefi.com/info',
   },
   {
-    label: 'NFT',
+    label: 'NFT ',
     icon: 'NftIcon',
-    href: '',
+    items: [
+      {
+        label: "NFT Collections",
+        href: 'https://duckydefi.com/nft',
+      },
+      {
+        label: "Ducky Zero",
+        href: 'https://nft.duckydefi.com',
+      },
+    ],
   }
 ]
 
